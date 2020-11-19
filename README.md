@@ -1,3 +1,7 @@
+<p align="center">
+<img src="https://image.freepik.com/free-icon/lock-circle_318-9883.jpg" width="200" height="200" />
+
+
 # Password Generator
 This tool will help anyone who is in need of a random password\
 You will get to decide how long you want your random password to be\
