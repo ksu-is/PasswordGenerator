@@ -12,9 +12,9 @@
 - [x] Find related Python code <br> -Yaritza/Jacob
 	
 ### Sprint 2: <br>
-- [ ] Making small updates <br> -Yaritza/Jacob
-- [ ] Committed at least 6 code changes <br> -Yaritza/Jacob
-- [ ] Include comment explaining change <br> -Yaritza/Jacob
+- [x] Making small updates <br> -Yaritza/Jacob
+- [x] Committed at least 6 code changes <br> -Yaritza/Jacob
+- [x] Include comment explaining change <br> -Yaritza/Jacob
 
 ### Sprint 3: <br>
 - [ ] Continue coding, refining, and testing code <br> -Yaritza/Jacob
