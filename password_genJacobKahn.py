@@ -1,51 +1,41 @@
 
-import string
-from random import randrange
+import random
+import array
 
-# Default values for this function are a lenght of 7 chars for the password and an alphabeth of ASCII letters and numbers.
-def password_gen(id_lenght = 7, alphabet = string.ascii_letters + string.digits):
+#7. created title for the passsword generator
+print('\nJacobs Password Generator:\n')
 
-    id_list = []
+#1. Changed the default values for the function and created arrays for all the elements of the password for me to better understand.
+id_length = 12
+CAPITAL_alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'] 
+LOWER_alphabet = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'M', 'N', 'O', 'p', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'] 
+DIGITS = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
+SYMBOLS = ['@', '#', '$', '%', '=', ':', '?', '.', '/', '|', '~', '>', '*', '(', ')'] 
 
-    # for the default alphabet this function will include an special random character on a random position on the password. 
-    special_char_index = -1 
-    if alphabet == string.ascii_letters + string.digits:
-        lenght_punctiation = len(string.punctuation) 
-        range_punct = randrange(lenght_punctiation)
-        special_char = string.punctuation[range_punct]
-        special_char_index = randrange(id_lenght)
+#2.combined all my arrays
+COMBINED_ELEMENTS = DIGITS + CAPITAL_alphabet + LOWER_alphabet + SYMBOLS 
+  
+
+#3.created an easier way to generate a special character in the random password generator as well as the other random elements. 
+random_digit = random.choice(DIGITS) 
+random_upper = random.choice(CAPITAL_alphabet) 
+random_lower = random.choice(LOWER_alphabet) 
+random_symbol = random.choice(SYMBOLS) 
+
+#4.combined the random elements selected above to create a temporary 4 element long password.
+temporary_pass = random_digit + random_upper + random_lower + random_symbol 
+
+#5.extended that 4 element passsword above to 12 for the complete password by pulling from the combined arrays above."combined elements"
+for x in range(id_length - 4): 
+    temporary_pass = temporary_pass + random.choice(COMBINED_ELEMENTS) 
+
+#6.created a loop to enter the additional 8 elements 
+password = "" 
+for x in temporary_pass: 
+        password = password + x 
+          
+print(password) 
+  
 
 
-    for i in range(id_lenght):
-        index = randrange(len(alphabet))
 
-        # in this part is where the special character gets added to the password (only if the default alphabed is used)
-        if i == special_char_index:
-            id_list.append(special_char)
-        else:
-            id_list.append(alphabet[index])
-
-    id = ''.join(id_list)    
-
-    return id
-
-
-print('-------------')
-passwrd = password_gen()
-print(f'->> Password with default function: "{passwrd}"')
-
-print('-------------')
-lenght = 15
-passwrd = password_gen(lenght)
-print(f'->> Password with function with lenght of {lenght}: "{passwrd}"')
-
-print('-------------')
-alpha = 'xyz-654'
-passwrd = password_gen(alphabet = alpha)
-print(f'->> Password with function with an Alphabet = "{alpha}": "{passwrd}"')
-
-print('-------------')
-lenght = 40
-alpha = 'abxy01'
-passwrd = password_gen(lenght,alpha)
-print(f'->> Password with function with lenght of {lenght} and an Alphabet = "{alpha}": "{passwrd}"')
