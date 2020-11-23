@@ -1,4 +1,4 @@
-#made new imports
+#made new imports in order for the new code below with arrays and random functions
 import random
 import array
 
