@@ -1,5 +1,5 @@
 import random
- 
+#added title
 print('\nPassword Generator\n==================\n')
  
 alphabets =['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P']
