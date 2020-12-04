@@ -18,7 +18,5 @@ password=""
 for x in range(pass_length):
     password = password + random.choice(characters)
    
-for x in password:
-    break
- 
+
 print("your random password is:", password)
