@@ -17,11 +17,11 @@
 - [x] Include comment explaining change <br> -Yaritza/Jacob
 
 ### Sprint 3: <br>
-- [ ] Continue coding, refining, and testing code <br> -Yaritza/Jacob
-- [ ] Create one PowerPoint slide for project introduction <br> -Yaritza/Jacob
-	- [ ] List project team members
-	- [ ] Show title of project
-	- [ ] Show a tag line that introduces the main concept of what it does
+- [x] Continue coding, refining, and testing code <br> -Yaritza/Jacob
+- [x] Create one PowerPoint slide for project introduction <br> -Yaritza/Jacob
+	- [x] List project team members
+	- [x] Show title of project
+	- [x] Show a tag line that introduces the main concept of what it does
 	- [ ] \(Optional) Show screenshots demonstrating idea
 - [ ] Upload PowerPoint slide to D2L and GitHub <br> -Yaritza/Jacob
 
