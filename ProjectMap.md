@@ -23,8 +23,8 @@
 	- [x] Show title of project
 	- [x] Show a tag line that introduces the main concept of what it does
 	- [ ] \(Optional) Show screenshots demonstrating idea
-- [ ] Upload PowerPoint slide to D2L and GitHub <br> -Yaritza/Jacob
+- [x] Upload PowerPoint slide to D2L and GitHub <br> -Yaritza/Jacob
 
 ### Final Presentation: <br>
-- [ ] Schedule and record in Teams Project channel <br> -Yaritza/Jacob
+- [x] Schedule and record in Teams Project channel <br> -Yaritza/Jacob
 - [ ] Post screenshot of presentation and the link to D2L <br> -Yaritza/Jacob
